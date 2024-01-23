@@ -8,7 +8,8 @@ Apple M3 Max, 1 CPU, 14 logical and 14 physical cores
 
 
 ```
-|                        Method |      Mean |    Error |   StdDev |  Gen 0 | Allocated |
-|------------------------------ |----------:|---------:|---------:|-------:|----------:|
-|                     NewRandom | 211.14 ns | 2.390 ns | 2.235 ns | 0.0086 |      72 B |
-| CryptographicallySecureRandom |  62.48 ns | 0.779 ns | 0.729 ns |      - |         - |
+|                        Method |       Mean |     Error |    StdDev |  Gen 0 | Allocated |
+|------------------------------ |-----------:|----------:|----------:|-------:|----------:|
+|                     NewRandom | 212.001 ns | 4.1147 ns | 3.8489 ns | 0.0086 |      72 B |
+|                  SharedRandom |   7.069 ns | 0.0421 ns | 0.0351 ns |      - |         - |
+| CryptographicallySecureRandom |  61.272 ns | 0.5298 ns | 0.4956 ns |      - |         - |

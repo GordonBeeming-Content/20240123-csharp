@@ -1,9 +1,2 @@
-﻿using System;
-
-static class Program
-{
-  public static void Main()
-  {
-    var rnd = new Random();
-  }
-}
+﻿using BenchmarkDotNet.Running;
+var summary = BenchmarkRunner.Run<MyBenchmark>();

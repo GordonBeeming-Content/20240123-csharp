@@ -1,4 +1,4 @@
-var rnd = new Random();
-var rnd2 = new Random();
-Console.WriteLine(rnd.NextInt64());
-Console.WriteLine(rnd2.NextInt64());
+var rnd = new Random(Random.Shared.Next());
+var rnd2 = new Random(Random.Shared.Next());
+Console.WriteLine(rnd.Next());
+Console.WriteLine(rnd2.Next());
