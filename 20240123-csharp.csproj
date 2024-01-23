@@ -4,8 +4,15 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8</TargetFramework>
     <RootNamespace>_20240123_csharp</RootNamespace>
-    <!-- <ImplicitUsings>enable</ImplicitUsings> -->
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="_samples\**" />
+  </ItemGroup>
 </Project>

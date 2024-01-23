@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmark-20240123-202845</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=macOS 14.2.1 (23C71) [Darwin 23.2.0]
+Apple M3 Max, 1 CPU, 14 logical and 14 physical cores
+.NET SDK=8.0.101
+  [Host]     : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT
+  DefaultJob : .NET 8.0.1 (8.0.123.58001), Arm64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                 Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>NewRandom</td><td>211.14 ns</td><td>2.390 ns</td><td>2.235 ns</td><td>0.0086</td><td>72 B</td>
+</tr><tr><td>CryptographicallySecureRandom</td><td>62.48 ns</td><td>0.779 ns</td><td>0.729 ns</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
